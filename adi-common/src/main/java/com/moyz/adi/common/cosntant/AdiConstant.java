@@ -84,6 +84,7 @@ public class AdiConstant {
         public static final String OPENAI_SETTING = "openai_setting";
         public static final String DASHSCOPE_SETTING = "dashscope_setting";
         public static final String QIANFAN_SETTING = "qianfan_setting";
+        public static final String CHATGLM_SETTING = "chatglm_setting";
         public static final String OLLAMA_SETTING = "ollama_setting";
         public static final String GOOGLE_SETTING = "google_setting";
         public static final String BING_SETTING = "bing_setting";

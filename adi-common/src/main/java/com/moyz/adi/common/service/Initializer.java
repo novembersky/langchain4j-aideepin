@@ -70,6 +70,15 @@ public class Initializer {
             LLMContext.addLLMService(model, new QianFanLLMService(model));
         }
 
+        //chatglm
+        String[] chatglmModels = LLMContext.getSupportModels(AdiConstant.SysConfigKey.CHATGLM_SETTING);
+        if (chatglmModels.length == 0) {
+            log.warn("chatglm service is disabled");
+        }
+        for (String model : chatglmModels) {
+            LLMContext.addLLMService(model, new ChatGlmLLMService(model));
+        }
+
         //ollama
         String[] ollamaModels = LLMContext.getSupportModels(AdiConstant.SysConfigKey.OLLAMA_SETTING);
         if (ollamaModels.length == 0) {
